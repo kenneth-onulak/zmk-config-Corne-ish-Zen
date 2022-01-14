@@ -26,7 +26,7 @@
                         bindings = <
    &kp ESC             &kp J     &kp C      &kp Y      &kp F        &kp K    &kp Z &kp L &kp CMMA   &kp U      &kp Q    &kp BKSP
    &th_hold LSHFT HOME &kp R     &mt LCTL S &mt LALT T &lt NUMPAD H &kp D    &kp M &kp N &mt RALT A &mt RCTL I &kp O    &th_hold RSHFT END
-   &kp TAB             &kp COLON &kp V      &kp G      &kp P        &kp B    &kp N &kp M &kp DOT    &kp SEMI   &kp FSLH &kp DEL
+   &kp TAB             &kp COLON &kp V      &kp G      &kp P        &kp B    &kp N &kp M &kp DOT    &kp SEMI   &kp FSLH &reset
                             &lt CONFIG LGUI &lt ADJUST LPAR  &lt SYMBOL E    &lt SYMBOL SPC &lt ARROWS ENTER &to GAMING
                         >;
                 };
