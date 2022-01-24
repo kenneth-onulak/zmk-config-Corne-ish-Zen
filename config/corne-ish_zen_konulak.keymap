@@ -3,6 +3,7 @@
 * Copyright (c) 2021 lowprokb.ca
 * SPDX-License-Identifier: MIT
 *
+* Modified RSTHD layout by Kenneth Onulak
 */
 
 #include <behaviors.dtsi>
@@ -24,9 +25,9 @@
                 default_layer {
                         label = "TYPING";
                         bindings = <
-   &kp ESC             &kp J     &kp C      &kp Y      &kp F        &kp K    &kp Z &kp L &kp CMMA   &kp U      &kp Q    &kp BKSP
-   &th_hold LSHFT HOME &kp R     &mt LCTL S &mt LALT T &lt NUMPAD H &kp D    &kp M &kp N &mt RALT A &mt RCTL I &kp O    &th_hold RSHFT END
-   &kp TAB             &kp COLON &kp V      &kp G      &kp P        &kp B    &kp N &kp M &kp DOT    &kp SEMI   &kp FSLH &reset
+   &kp ESC        &kp J     &kp C      &kp Y      &kp F        &kp K    &kp Z &kp L &kp CMMA   &kp U      &kp Q    &kp BKSP
+   &mt LSHFT HOME &kp R     &mt LCTL S &mt LALT T &lt NUMPAD H &kp D    &kp M &kp N &mt RALT A &mt RCTL I &kp O    &mt RSHFT END
+   &kp TAB        &kp COLON &kp V      &kp G      &kp P        &kp B    &kp N &kp M &kp DOT    &kp SEMI   &kp FSLH &reset
                             &lt CONFIG LGUI &lt ADJUST LPAR  &lt SYMBOL E    &lt SYMBOL SPC &lt ARROWS ENTER &to GAMING
                         >;
                 };
@@ -43,7 +44,7 @@
 
                 numpad_layer {
                         label = "NUMPAD";
-                        bindings = < 
+                        bindings = <
    &none &kp KP_NLCK &none &none &none &none    &none       &kp KP_N7 &kp KP_N8 &kp KP_N9 &none &kp BSPC
    &none &kp CAPS    &none &none &none &none    &kp KP_CMMA &kp KP_N4 &kp KP_N5 &kp KP_N6 &none &none
    &none &kp SLCK    &none &none &none &none    &kp KP_DOT  &kp KP_N1 &kp KP_N2 &kp KP_N3 &none &kp DEL
@@ -74,7 +75,7 @@
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
+   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
                                         &none        &none        &none           &none &none &none
