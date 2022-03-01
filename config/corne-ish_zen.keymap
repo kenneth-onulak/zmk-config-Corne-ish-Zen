@@ -19,15 +19,28 @@
 #define CONFIG 6
 
 / {
+    behaviors {
+        pht: positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "POSITIONAL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            // if you press any key NOT listed in hold-trigger-key-positions before tapping-term-ms expires, it will produce a tap.
+            hold-trigger-key-positions;    // <---[[the J key]]
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         label = "TYPING";
                         bindings = <
-   &kp ESC        &kp J     &kp C       &kp Y      &kp F        &kp K    &kp Z &kp L &kp COMMA   &kp U       &kp Q    &kp BSPC
-   &th_hold LSHFT HOME &kp R     &th_hold LCTRL S &th_hold LALT T &lt NUMPAD H &kp D    &kp M &kp N &th_hold RALT A  &th_hold RCTRL I &kp O    &th_hold RSHFT END
-   &kp TAB        &kp COLON &kp V       &kp G      &kp P        &kp B    &kp N &kp M &kp DOT     &kp SEMI    &kp FSLH &kp DEL
+   &kp ESC         &kp J     &kp C        &kp Y       &kp F        &kp K    &kp Z &kp L &kp COMMA    &kp U        &kp Q    &kp BSPC
+   &pht LSHFT HOME &kp R     &pht LCTRL S &pht LALT T &lt NUMPAD H &kp D    &kp M &kp N &pht RALT A  &pht RCTRL I &kp O    &pht RSHFT END
+   &kp TAB         &kp COLON &kp V        &kp G       &kp P        &kp B    &kp N &kp M &kp DOT      &kp SEMI     &kp FSLH &kp DEL
                         &lt CONFIG LGUI &lt ADJUST LPAR  &lt SYMBOL E    &lt SYMBOL SPACE &lt ARROWS ENTER &to GAMING
                         >;
                 };
