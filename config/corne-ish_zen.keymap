@@ -52,7 +52,7 @@
                         >;
                 };
 
-                numrow_layer {
+                arrows_layer {
                         label = "ARROWS";
                         bindings = <
    &none     &none &none     &none    &none &none    &none &none    &kp UP   &none     &kp PG_UP &none
