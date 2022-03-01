@@ -62,6 +62,16 @@
                         >;
                 };
 
+                symbol_layer {
+                        label = "SYMBOL";
+                        bindings = <
+   &none    &kp EXCL  &kp AT    &kp POUND &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS &kp ASTRK &kp UNDER &kp EQUAL &kp BSPC
+   &kp APOS &kp LT    &kp LBRC  &kp LPAR  &kp LBKT  &kp FSLH     &kp BSLH  &kp RBKT &kp RPAR  &kp RBRC  &kp GT    &kp DQT
+   &none    &kp COLON &kp TILDE &kp GRAVE &kp QMARK &kp MINUS    &kp PLUS  &kp PIPE &kp COMMA &kp DOT   &kp SEMI  &kp DEL
+                                            &none &none &none    &none &none &none
+                        >;
+                };
+
                 adjust_layer {
                         label = "ADJUST";
                         bindings = <
