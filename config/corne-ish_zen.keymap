@@ -25,8 +25,8 @@
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
             // if you press any key NOT listed in hold-trigger-key-positions before tapping-term-ms expires, it will produce a tap.
             hold-trigger-key-positions = <0>;    // <---[[the ESC key]]
@@ -79,7 +79,7 @@
                         label = "SYMBOL";
                         bindings = <
    &none    &kp EXCL  &kp AT    &kp POUND &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS &kp ASTRK &kp UNDER &kp EQUAL &kp BSPC
-   &kp APOS &kp LT    &kp LBRC  &kp LPAR  &kp LBKT  &kp FSLH     &kp BSLH  &kp RBKT &kp RPAR  &kp RBRC  &kp GT    &kp DQT
+   &kp APOS &kp LT    &kp LBKT  &kp LBRC  &kp LPAR  &kp FSLH     &kp BSLH  &kp RPAR &kp RBRC  &kp RBKT  &kp GT    &kp DQT
    &none    &kp COLON &kp TILDE &kp GRAVE &kp QMARK &kp MINUS    &kp PLUS  &kp PIPE &kp COMMA &kp DOT   &kp SEMI  &kp DEL
                                             &none &none &none    &none &none &none
                         >;
