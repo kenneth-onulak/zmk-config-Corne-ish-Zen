@@ -40,7 +40,7 @@
                         bindings = <
    &kp ESC         &kp J     &kp C        &kp Y       &kp F        &kp K    &kp Z &kp L &kp COMMA    &kp U        &kp Q    &kp BSPC
    &pht LSHFT HOME &kp R     &pht LCTRL S &pht LALT T &lt NUMPAD H &kp D    &kp M &kp N &pht RALT A  &pht RCTRL I &kp O    &pht RSHFT END
-   &kp TAB         &kp COLON &kp V        &kp G       &kp P        &kp B    &kp N &kp W &kp DOT      &kp SEMI     &kp FSLH &kp DEL
+   &kp TAB         &kp COLON &kp V        &kp G       &kp P        &kp B    &kp X &kp W &kp DOT      &kp SEMI     &kp FSLH &kp DEL
                         &lt CONFIG LGUI &lt ADJUST LPAR  &lt SYMBOL E    &lt SYMBOL SPACE &lt ARROWS ENTER &to GAMING
                         >;
                 };
